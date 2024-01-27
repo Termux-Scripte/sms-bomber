@@ -6,6 +6,7 @@ try:
     import urllib3; urllib3.disable_warnings()
 except ImportError:
     system("python3 -m pip install urllib3")
+    system("clear")
 import urllib3; urllib3.disable_warnings()
 from time import sleep
 try:
