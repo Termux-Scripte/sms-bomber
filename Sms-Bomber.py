@@ -4,6 +4,7 @@ from re import match, sub
 from threading import Thread, active_count
 import urllib3; urllib3.disable_warnings()
 from time import sleep
+system("python3 -m pip install requests")
 try:
     from requests import get, post
 except ImportError:
