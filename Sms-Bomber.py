@@ -2,7 +2,10 @@ from platform import node, system, release; Node, System, Release = node(), syst
 from os import system, name; system('clear' if name == 'posix' else 'cls')
 from re import match, sub
 from threading import Thread, active_count
-system("python3 -m pip install urllib3")
+try:
+    import urllib3; urllib3.disable_warnings()
+except ImportError:
+    system("python3 -m pip install urllib3")
 import urllib3; urllib3.disable_warnings()
 from time import sleep
 try:
