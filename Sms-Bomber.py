@@ -9,7 +9,7 @@ except ImportError:
     system("python3 -m pip install urllib3")
     sleep(1)
     system("clear")
-import urllib3; urllib3.disable_warnings()
+    import urllib3; urllib3.disable_warnings()
 try:
     from requests import get, post
 except ImportError:
